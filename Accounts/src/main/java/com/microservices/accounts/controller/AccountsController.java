@@ -1,6 +1,7 @@
 package com.microservices.accounts.controller;
 
 import com.microservices.accounts.Constants.Constants;
+import com.microservices.accounts.dto.AccountsConfig;
 import com.microservices.accounts.dto.CustomerDto;
 import com.microservices.accounts.dto.ErrorResponseDto;
 import com.microservices.accounts.dto.ResponseDto;
@@ -15,6 +16,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,14 +25,20 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
-@AllArgsConstructor
 @Validated
 @Tag(
         name = "Crud Operations for Accounts/Customer",
         description = "Use this REST Api to add/update/fetch/delete operations on the Accounts/Customer")
 public class AccountsController {
 
+    public AccountsController(IAccountsService iAccountsService) {
+        this.iAccountsService = iAccountsService;
+    }
+
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private AccountsConfig accountsConfig;
 
     @Operation(
             description = "Create an account operation"
@@ -131,5 +139,31 @@ public class AccountsController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(Constants.STATUS_417, Constants.MESSAGE_417_DELETE));
         }
+    }
+
+    @Operation(
+            summary = "Contact Info",
+            description = "Contact Info details depending on ENV"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/accountsInfoENV")
+    public ResponseEntity<AccountsConfig> getAccountsInfo(){
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(accountsConfig);
     }
 }

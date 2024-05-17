@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Accounts/Accounts.iml" filepath="$PROJECT_DIR$/Accounts/Accounts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cards/Cards.iml" filepath="$PROJECT_DIR$/Cards/Cards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Loans/LoanMS.iml" filepath="$PROJECT_DIR$/Loans/LoanMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservices.iml" filepath="$PROJECT_DIR$/.idea/microservices.iml" />
     </modules>
   </component>

@@ -11,9 +11,26 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_test.yml"
+      - "application_prod.yml"
+  profiles:
+    active: "test"
   h2:
     console:
       enabled: true
+
+
+
+accounts:
+  message: "Welcome to accounts related local APIs "
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@doe.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444
 
 server:
   port: 8080
