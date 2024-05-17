@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Cards related to prod APIs "
+  contactDetails:
+    name: "Cards Product Owner"
+    email: "John@Prod.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444
