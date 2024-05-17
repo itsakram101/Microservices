@@ -1,0 +1,16 @@
+com\microservices\loanms\Dto\ErrorDto.class
+com\microservices\loanms\Controller\LoansController.class
+com\microservices\loanms\Dto\LoansDto.class
+com\microservices\loanms\Exception\GlobalExceptionHandler.class
+com\microservices\loanms\Service\LoansServiceImpl.class
+com\microservices\loanms\Mapper\LoansMapper.class
+com\microservices\loanms\Entity\LoansEntity.class
+com\microservices\loanms\Exception\ResourceNotFoundException.class
+com\microservices\loanms\Repository\LoansRepository.class
+com\microservices\loanms\Entity\BaseEntity.class
+com\microservices\loanms\Service\ILoansService.class
+com\microservices\loanms\LoansConstants\LoansConstants.class
+com\microservices\loanms\Audit\AuditLoans.class
+com\microservices\loanms\Exception\LoanAlreadyExistException.class
+com\microservices\loanms\Dto\ResponseDto.class
+com\microservices\loanms\LoanMsApplication.class
