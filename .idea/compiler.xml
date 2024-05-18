@@ -10,7 +10,6 @@
         <module name="LoanMS" />
         <module name="Accounts" />
         <module name="Cards" />
-        <module name="configServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
