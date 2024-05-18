@@ -10,11 +10,13 @@
         <module name="LoanMS" />
         <module name="Accounts" />
         <module name="Cards" />
+        <module name="configServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Accounts" target="17" />
       <module name="Cards" target="17" />
+      <module name="configServer" target="17" />
       <module name="LoanMS" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,7 @@
       <module name="Accounts" options="-parameters" />
       <module name="Cards" options="-parameters" />
       <module name="LoanMS" options="-parameters" />
+      <module name="configServer" options="-parameters" />
     </option>
   </component>
 </project>
