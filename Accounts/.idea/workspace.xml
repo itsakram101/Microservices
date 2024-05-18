@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68f7abdf-5025-4f3d-b567-6531a0b3ab37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Accounts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/AccountsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/Audit/AuditAwareImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/Constants/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/Exceptions/CustomerAlreadyExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/Exceptions/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/Exceptions/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/controller/AccountsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/dto/AccountsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/dto/CustomerDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/dto/ErrorResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/entity/Accounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/mapper/AccountsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/mapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/repository/AccountsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/service/AccountsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/microservices/accounts/service/IAccountsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/microservices/accounts/AccountsApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2gbgWnBd80dPMvuQ40ZNM4TUiHw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41379312" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68f7abdf-5025-4f3d-b567-6531a0b3ab37" name="Changes" comment="" />
+      <created>1715971726360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715971726360</updated>
+      <workItem from="1715971727536" duration="824000" />
+      <workItem from="1715972594194" duration="32000" />
+      <workItem from="1715972678394" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
