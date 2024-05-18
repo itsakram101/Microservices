@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Loans related to local APIs "
+  contactDetails:
+    name: "Loans Product Owner"
+    email: "john@doe.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444

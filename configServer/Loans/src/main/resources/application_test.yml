@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "test"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Loans related to test APIs "
+  contactDetails:
+    name: "Loans Product Owner"
+    email: "john@test.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444
