@@ -1,0 +1,12 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "accounts related local APIs "
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@doe.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444
+

@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Cards related to local APIs "
+  contactDetails:
+    name: "Cards Product Owner"
+    email: "john@doe.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444

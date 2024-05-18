@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Accounts related to prod APIs "
+  contactDetails:
+    name: "Accounts Product Owner"
+    email: "John@Prod.com"
+  onCallSupport:
+    - (555) 555-5555
+    - (444) 444-4444
