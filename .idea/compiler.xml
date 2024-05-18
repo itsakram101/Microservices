@@ -10,11 +10,17 @@
         <module name="LoanMS" />
         <module name="Accounts" />
         <module name="Cards" />
+        <module name="configServer" />
+      </profile>
+      <profile name="Annotation profile for configServer" enabled="true">
+        <sourceOutputDir name="configServer/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="configServer/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="microservices" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Accounts" target="17" />
+      <module name="Accounts" target="${java.version}" />
       <module name="Cards" target="17" />
       <module name="configServer" target="17" />
       <module name="LoanMS" target="17" />
