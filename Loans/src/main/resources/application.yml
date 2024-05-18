@@ -1,9 +1,12 @@
 server:
   port: 8090
-  address: 0.0.0.0  # Ensure it listens on all interfaces
 spring:
+  application:
+    name: "loans"
+  profiles:
+    active: "test"
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:rundb
     driverClassName: org.h2.Driver
     username: sa
     password: ''
@@ -16,9 +19,5 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import:
-      - "application_test.yml"
-      - "application_prod.yml"
-    profiles:
-      active:
-        - "test"
+    import: "optional:configserver:http://localhost:8071/"
+
