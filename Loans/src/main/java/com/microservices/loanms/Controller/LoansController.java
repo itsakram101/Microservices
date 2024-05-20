@@ -1,6 +1,7 @@
 package com.microservices.loanms.Controller;
 
 import com.microservices.loanms.Dto.ErrorDto;
+import com.microservices.loanms.Dto.LoansConfigDto;
 import com.microservices.loanms.Dto.LoansDto;
 import com.microservices.loanms.Dto.ResponseDto;
 import com.microservices.loanms.LoansConstants.LoansConstants;
@@ -14,20 +15,27 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(
         name = "Crud Operations for loan Details",
         description = "Use this REST Api for add/update/fetch/delete operations on the loans")
 public class LoansController {
 
-    ILoansService iLoansService;
+    public LoansController(ILoansService iLoansService) {
+        this.iLoansService = iLoansService;
+    }
+
+    private ILoansService iLoansService;
+
+    @Autowired
+    private LoansConfigDto loansConfigDto;
 
     @Operation(
             summary = "Fetch Loan Details REST API",
@@ -161,6 +169,14 @@ public class LoansController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(LoansConstants.STATUS_417, LoansConstants.MESSAGE_417_DELETE));
         }
+    }
+
+    @GetMapping("/loansInfoENV")
+    public ResponseEntity<LoansConfigDto> getLoansInfo(){
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(loansConfigDto);
     }
 
 }

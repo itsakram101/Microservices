@@ -1,17 +1,17 @@
-package com.microservices.accounts.dto;
+package com.microservices.cards.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 import java.util.List;
 import java.util.Map;
 
-@ConfigurationProperties(prefix = "accounts")
+
+@ConfigurationProperties(prefix = "cards")
 @Getter
 @Setter
-public class AccountsConfig{
+public class CardsConfigDto {
 
     private String message;
     private Map<String, String> contactDetails;

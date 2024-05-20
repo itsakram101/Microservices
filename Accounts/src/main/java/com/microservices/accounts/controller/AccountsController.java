@@ -1,13 +1,12 @@
 package com.microservices.accounts.controller;
 
 import com.microservices.accounts.Constants.Constants;
-import com.microservices.accounts.dto.AccountsConfig;
+import com.microservices.accounts.dto.AccountsConfigDto;
 import com.microservices.accounts.dto.CustomerDto;
 import com.microservices.accounts.dto.ErrorResponseDto;
 import com.microservices.accounts.dto.ResponseDto;
 import com.microservices.accounts.service.IAccountsService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -15,7 +14,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -38,7 +36,7 @@ public class AccountsController {
     private IAccountsService iAccountsService;
 
     @Autowired
-    private AccountsConfig accountsConfig;
+    private AccountsConfigDto accountsConfigDto;
 
     @Operation(
             description = "Create an account operation"
@@ -160,10 +158,10 @@ public class AccountsController {
     }
     )
     @GetMapping("/accountsInfoENV")
-    public ResponseEntity<AccountsConfig> getAccountsInfo(){
+    public ResponseEntity<AccountsConfigDto> getAccountsInfo(){
 
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(accountsConfig);
+                .body(accountsConfigDto);
     }
 }

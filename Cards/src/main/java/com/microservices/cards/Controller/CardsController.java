@@ -3,6 +3,7 @@ package com.microservices.cards.Controller;
 import ch.qos.logback.classic.Logger;
 import com.microservices.cards.Constants.CardsConstants;
 import com.microservices.cards.Service.ICardsService;
+import com.microservices.cards.dto.CardsConfigDto;
 import com.microservices.cards.dto.CardsDto;
 import com.microservices.cards.dto.ErrorDto;
 import com.microservices.cards.dto.ResponseDto;
@@ -12,13 +13,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
-import org.slf4j.LoggerFactory;import org.springframework.http.HttpStatus;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(
         name = "Crud Operations for Card Details",
@@ -27,7 +29,14 @@ public class CardsController {
 
     private static final Logger logger = (Logger) LoggerFactory.getLogger(CardsController.class);
 
-    ICardsService iCardsService;
+    public CardsController(ICardsService iCardsService) {
+        this.iCardsService = iCardsService;
+    }
+
+    private ICardsService iCardsService;
+
+    @Autowired
+    private CardsConfigDto cardsConfigDto;
 
     @Operation(
             description = "creating a Card with a unique mobile number"
@@ -106,5 +115,13 @@ public class CardsController {
         return ResponseEntity
                 .status(HttpStatus.NO_CONTENT)
                 .build();
+    }
+
+    @GetMapping("/cardsInfoENV")
+    public ResponseEntity<CardsConfigDto> getCardsInfo(){
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(cardsConfigDto);
     }
 }
