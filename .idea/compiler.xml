@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Accounts" target="${java.version}" />
+      <module name="Accounts" target="17" />
       <module name="Cards" target="17" />
       <module name="configServer" target="17" />
       <module name="LoanMS" target="17" />

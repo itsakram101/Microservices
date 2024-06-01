@@ -142,6 +142,7 @@
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:2.0.5" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-monitor:4.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.5" level="project" />
