@@ -1,4 +1,4 @@
-services:
+  services:
   network-deploy-service:
     networks:
       - microservices-network

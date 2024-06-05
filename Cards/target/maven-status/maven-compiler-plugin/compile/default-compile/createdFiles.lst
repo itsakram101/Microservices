@@ -3,6 +3,8 @@ com\microservices\cards\Exception\GlobalExceptionHandler.class
 com\microservices\cards\repository\CardsRepository.class
 com\microservices\cards\dto\ErrorDto.class
 com\microservices\cards\entity\BaseEntity.class
+META-INF\spring-configuration-metadata.json
+com\microservices\cards\dto\CardsConfigDto.class
 com\microservices\cards\Service\ImplCardsService.class
 com\microservices\cards\Mapper\CardsMapper.class
 com\microservices\cards\Controller\CardsController.class

@@ -16,7 +16,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "microservices/configserver:s6"
+    build: ../../configServer
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -25,16 +25,16 @@ services:
         condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
-      interval: 10s
-      timeout: 5s
-      retries: 10
+      interval: 20s
+      timeout: 3s
+      retries: 3
       start_period: 10s
     extends:
       file: common-config.yml
       service: microservice-base-config
 
   accounts:
-    image: "microservices/accounts:s6"
+    build: ../../Accounts
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -47,33 +47,7 @@ services:
       file: common-config.yml
       service: microservice-configserver-config
 
-  loans:
-    image: "microservices/loans:s6"
-    container_name: loans-ms
-    ports:
-      - "8090:8090"
-    depends_on:
-      configserver:
-        condition: service_healthy
-    environment:
-      SPRING_APPLICATION_NAME: "loans"
-    extends:
-      file: common-config.yml
-      service: microservice-configserver-config
 
-  cards:
-    image: "microservices/cards:s6"
-    container_name: cards-ms
-    ports:
-      - "9000:9000"
-    depends_on:
-      configserver:
-        condition: service_healthy
-    environment:
-      SPRING_APPLICATION_NAME: "cards"
-    extends:
-      file: common-config.yml
-      service: microservice-configserver-config
 
 networks:
   microservices-network:

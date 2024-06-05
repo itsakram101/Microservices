@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Cards/Cards.iml" filepath="$PROJECT_DIR$/Cards/Cards.iml" />
       <module fileurl="file://$PROJECT_DIR$/Loans/LoanMS.iml" filepath="$PROJECT_DIR$/Loans/LoanMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/configServer/configServer.iml" filepath="$PROJECT_DIR$/configServer/configServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker-compose/docker-compose.iml" filepath="$PROJECT_DIR$/docker-compose/docker-compose.iml" />
     </modules>
   </component>
 </project>

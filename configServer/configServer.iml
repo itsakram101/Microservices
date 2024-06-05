@@ -27,6 +27,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:3.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.4.14" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.4.14" level="project" />
@@ -44,26 +47,25 @@
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.12.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-server:4.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-client:4.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:4.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:4.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:6.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.15.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:3.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:10.1.20" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.20" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.20" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:6.1.6" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:6.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.1.6" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.1.6" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-server:4.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-client:4.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:4.1.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:4.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.15.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-validation:3.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.20" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:8.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:3.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.5.3.Final" level="project" />
@@ -143,10 +145,6 @@
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-monitor:4.1.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:3.2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.32" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:3.2.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:3.2.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:3.2.5" level="project" />

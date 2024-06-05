@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f28cdf-0f72-4da5-9715-e7ef3a338834" name="Changes" comment="added docker compose versions">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_monitor_4_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/Accounts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Accounts/Accounts.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Accounts/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/src/main/java/com/microservices/accounts/dto/AccountsConfigDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Accounts/src/main/java/com/microservices/accounts/dto/AccountsConfigDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/Accounts-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/Accounts-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/AccountsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/Audit/AuditAwareImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/Constants/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/Exceptions/CustomerAlreadyExistException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/Exceptions/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/Exceptions/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/controller/AccountsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/dto/AccountsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/dto/AccountsDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/dto/CustomerDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/dto/ErrorResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/dto/ResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/entity/Accounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/entity/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/entity/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/mapper/AccountsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/mapper/CustomerMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/repository/AccountsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/repository/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/service/AccountsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/com/microservices/accounts/service/IAccountsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/surefire-reports/TEST-com.microservices.accounts.AccountsApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/surefire-reports/com.microservices.accounts.AccountsApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Accounts/target/test-classes/com/microservices/accounts/AccountsApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cards/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Cards/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/configServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../configServer/configServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../configServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/src/main/java/com/microservices/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../configServer/src/main/java/com/microservices/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../configServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/classes/com/microservices/configserver/ConfigServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/configServer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/configServer-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/surefire-reports/TEST-com.microservices.configserver.ConfigServerApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/surefire-reports/com.microservices.configserver.ConfigServerApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../configServer/target/test-classes/com/microservices/configserver/ConfigServerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +36,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717279098887</updated>
-      <workItem from="1717279100221" duration="960000" />
+      <workItem from="1717279100221" duration="1167000" />
+      <workItem from="1717280304139" duration="72000" />
     </task>
+    <task id="LOCAL-00001" summary="added docker compose versions">
+      <created>1717280106088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717280106088</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
