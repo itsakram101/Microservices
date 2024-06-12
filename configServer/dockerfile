@@ -1,6 +1,9 @@
 # Use the official OpenJDK image for Java 17
 FROM openjdk:17-slim
 
+# Update package list and install curl
+RUN apt-get update && apt-get install -y curl
+
 # Specify the argument for the jar file
 ARG JAR_FILE=target/*.jar
 
