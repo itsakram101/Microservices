@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/Loans/pom.xml" />
         <option value="$PROJECT_DIR$/configServer/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaServer/pom.xml" />
       </list>
     </option>
   </component>

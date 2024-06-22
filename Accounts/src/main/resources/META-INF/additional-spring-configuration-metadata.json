@@ -4,5 +4,15 @@
       "name": "spring.config.profiles.active",
       "type": "java.lang.String",
       "description": "Description for spring.config.profiles.active."
-  }
-] }
+    },
+    {
+      "name": "endpoints.shutdown.enabled",
+      "type": "java.lang.String",
+      "description": "Description for endpoints.shutdown.enabled."
+    },
+    {
+      "name": "endpoints.shutdown.enabled",
+      "type": "java.lang.String",
+      "description": "Description for endpoints.shutdown.enabled."
+    }
+  ] }
