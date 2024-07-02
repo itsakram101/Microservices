@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gatewayserver" />
         <module name="LoanMS" />
         <module name="eurekaServer" />
         <module name="Accounts" />
@@ -19,6 +20,7 @@
       <module name="Cards" target="17" />
       <module name="configServer" target="17" />
       <module name="eurekaServer" target="17" />
+      <module name="gatewayserver" target="17" />
       <module name="LoanMS" target="17" />
       <module name="microservices" target="17" />
     </bytecodeTargetLevel>
@@ -30,6 +32,7 @@
       <module name="LoanMS" options="-parameters" />
       <module name="configServer" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
+      <module name="gatewayserver" options="-parameters" />
       <module name="microservices" options="-parameters" />
     </option>
   </component>
