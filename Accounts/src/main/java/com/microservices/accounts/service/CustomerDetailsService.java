@@ -28,7 +28,7 @@ public class CustomerDetailsService {
 
     private CardsFeignClient cardsFeignClient;
 
-    public CustomerDetailsConfig fetchCustomerDetails(String mobileNumber){
+    public CustomerDetailsConfig fetchCustomerDetails(String mobileNumber, String correlationId){
 
         Customer resultCustomer = customerRepository.findByMobileNumber(mobileNumber)
                 .orElseThrow(() -> new ResourceNotFoundException("customer", "mobile number", mobileNumber));
@@ -39,8 +39,8 @@ public class CustomerDetailsService {
 
         CustomerDetailsConfig fetchedCustomerAccountData = mapToCustomerDetailsDto(resultCustomer, new CustomerDetailsConfig());
 
-        ResponseEntity<LoansConfigDto> loansRespEntity = loansFeignClient.fetchLoan(mobileNumber);
-        ResponseEntity<CardsConfigDto> cardsRespEntity = cardsFeignClient.fetchCard(mobileNumber);
+        ResponseEntity<LoansConfigDto> loansRespEntity = loansFeignClient.fetchLoan(correlationId, mobileNumber);
+        ResponseEntity<CardsConfigDto> cardsRespEntity = cardsFeignClient.fetchCard(correlationId, mobileNumber);
 
         fetchedCustomerAccountData.setAccountsDto(mapToAccountsDto(account, new AccountsDto()));
         fetchedCustomerAccountData.setCardsConfigDto(cardsRespEntity.getBody());
