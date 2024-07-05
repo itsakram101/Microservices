@@ -43,8 +43,14 @@ public class CustomerDetailsService {
         ResponseEntity<CardsConfigDto> cardsRespEntity = cardsFeignClient.fetchCard(correlationId, mobileNumber);
 
         fetchedCustomerAccountData.setAccountsDto(mapToAccountsDto(account, new AccountsDto()));
-        fetchedCustomerAccountData.setCardsConfigDto(cardsRespEntity.getBody());
-        fetchedCustomerAccountData.setLoansConfigDto(loansRespEntity.getBody());
+
+        if(cardsRespEntity != null){
+            fetchedCustomerAccountData.setCardsConfigDto(cardsRespEntity.getBody());
+        }
+
+        if (loansRespEntity != null){
+            fetchedCustomerAccountData.setLoansConfigDto(loansRespEntity.getBody());
+        }
 
         return fetchedCustomerAccountData;
 
