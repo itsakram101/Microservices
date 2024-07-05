@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "cards",
+      "type": "com.microservices.cards.dto.CardsConfigDto",
+      "sourceType": "com.microservices.cards.dto.CardsConfigDto"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cards.contact-details",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.microservices.cards.dto.CardsConfigDto"
+    },
+    {
+      "name": "cards.message",
+      "type": "java.lang.String",
+      "sourceType": "com.microservices.cards.dto.CardsConfigDto"
+    },
+    {
+      "name": "cards.on-call-support",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.microservices.cards.dto.CardsConfigDto"
+    }
+  ],
+  "hints": []
+}

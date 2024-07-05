@@ -66,11 +66,13 @@ public class CardsController {
     )
     @GetMapping("/get")
     public ResponseEntity<CardsDto> fetchCard
-            (@RequestParam
-             @Pattern(regexp="^[0-9]{10}$", message = "Mobile number must be exactly 10 digits")
-                     String mobileNumber){
+            (@RequestHeader
+                     ("correlation-id") String correlationId,
+             @RequestParam
+             @Pattern(regexp="^[0-9]{10}$", message = "Mobile number must be exactly 10 digits") String mobileNumber)
+    {
 
-        logger.info("fetching card details for mobile numbre: {}", mobileNumber);
+        logger.debug("test correlation id found: {}", correlationId);
 
         CardsDto fetchedCard = iCardsService.fetchCard(mobileNumber);
 

@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/configServer/configServer.iml" filepath="$PROJECT_DIR$/configServer/configServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/docker-compose/docker-compose.iml" filepath="$PROJECT_DIR$/docker-compose/docker-compose.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaServer/eurekaServer.iml" filepath="$PROJECT_DIR$/eurekaServer/eurekaServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gatewayServer/gatewayServer.iml" filepath="$PROJECT_DIR$/gatewayServer/gatewayServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatewayserver/gatewayserver.iml" filepath="$PROJECT_DIR$/gatewayserver/gatewayserver.iml" />
     </modules>
   </component>
 </project>

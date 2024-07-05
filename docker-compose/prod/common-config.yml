@@ -1,8 +1,7 @@
 services:
   network-deploy-service:
     networks:
-      - akramNet
-
+      - akram
 
   microservice-base-config:
     extends:
@@ -18,7 +17,6 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: prod
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
-
 
   microservice-eureka-config:
     extends:
