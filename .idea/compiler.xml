@@ -16,7 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Accounts" target="1.5" />
+      <module name="Accounts" target="17" />
       <module name="Cards" target="1.5" />
       <module name="configServer" target="1.5" />
       <module name="eurekaServer" target="1.5" />

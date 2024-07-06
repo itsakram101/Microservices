@@ -20,6 +20,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.core.env.Environment;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 
 @RestController
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -34,6 +36,9 @@ public class AccountsController {
     }
 
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private Environment environment;
 
     @Autowired
     private AccountsConfigDto accountsConfigDto;
@@ -164,4 +169,19 @@ public class AccountsController {
                 .status(HttpStatus.OK)
                 .body(accountsConfigDto);
     }
+
+    @RateLimiter(name= "getJavaVersion", fallbackMethod = "getJavaVersionFallback")
+    @GetMapping("/java-version")
+    public ResponseEntity<String> getJavaVersion() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(environment.getProperty("JAVA_HOME"));
+    }
+
+    public ResponseEntity<String> getJavaVersionFallback(Throwable throwable) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Java 17");
+    }
+
 }
